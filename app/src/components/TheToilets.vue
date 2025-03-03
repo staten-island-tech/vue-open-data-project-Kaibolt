@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>Funky File Test, are we here?</h2>
+        <h2>TheToilets.vue is in use.</h2>
     </div>
 </template>
 
