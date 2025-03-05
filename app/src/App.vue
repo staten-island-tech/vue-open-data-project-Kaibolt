@@ -13,7 +13,8 @@ import TheToilets from './components/TheToilets.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <TheToilets/>
+  <Suspense>
+  <TheToilets/></Suspense>
 </template>
 
 <style scoped>

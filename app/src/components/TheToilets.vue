@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-
 async function getToilets() {
     let res = await fetch(`https://data.cityofnewyork.us/resource/hjae-yuav.json`);
     let toiletData = await res.json();
@@ -21,8 +20,8 @@ async function makeNames() {
     } //After checking with console.log, the toilet names are indeed pushed
     return namedToilets
 }
-getToilets()
-let test = async
+let names = await makeNames().then() // .then() wont work, neither will Promise.resolve(test)
+console.log(names)
 </script>
 
 <style lang="scss" scoped>
