@@ -19,6 +19,18 @@ async function getToilets() {
 }
 let toiletArray = await getToilets().then() // .then() wont work, neither will Promise.resolve(test)
 console.log(toiletArray)
+function handicapAccess() {
+    let i = toiletArray.length
+    let x = 0
+    while (x !== i) {
+        if (toiletArray[x].handicap_accessible == "Yes") {
+            console.log("Handicap Accessible True: " + toiletArray[x].name)
+        }
+        else {console.log("Handicap Accessible False " + toiletArray[x].name)}
+        x++
+    }
+}
+handicapAccess()
 </script>
 
 <style lang="scss" scoped>
