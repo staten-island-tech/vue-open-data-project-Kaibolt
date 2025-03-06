@@ -1,6 +1,13 @@
 <template>
     <div>
         <h2>TheToilets.vue is in use.</h2>
+        <div v-for="toilet in toiletArray">
+
+            <h3 > {{ toilet.name }}</h3>
+            <h4>{{ toilet.location }}</h4>
+            <p>{{ toilet.borough }}</p>
+
+        </div>
     </div>
 </template>
 
@@ -10,18 +17,8 @@ async function getToilets() {
     let toiletData = await res.json();
     return toiletData // after checking with console.log, the toilet data indeed exists
 }
-async function makeNames() {
-    let toiletData = await getToilets()
-    let i = 0
-    let namedToilets = [];
-    while (i < toiletData.length) {
-        namedToilets.push(toiletData[i].name)
-        i++
-    } //After checking with console.log, the toilet names are indeed pushed
-    return namedToilets
-}
-let names = await makeNames().then() // .then() wont work, neither will Promise.resolve(test)
-console.log(names)
+let toiletArray = await getToilets().then() // .then() wont work, neither will Promise.resolve(test)
+console.log(toiletArray)
 </script>
 
 <style lang="scss" scoped>
