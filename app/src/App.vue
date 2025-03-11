@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
 import TheToilets from "./components/TheToilets.vue";
 </script>
 
@@ -13,6 +12,11 @@ import TheToilets from "./components/TheToilets.vue";
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />-->
+  <div class="navbar bg-base-100 shadow-sm justify-around">
+  <h2><a class="btn btn-ghost text-xl">All Toilets</a></h2> 
+  <h2><a class="btn btn-ghost text-xl">Accessibility</a></h2> 
+  <h2><a class="btn btn-ghost text-xl">Year-Round</a></h2> 
+</div>
   <Suspense> <TheToilets /></Suspense>
 </template>
 
