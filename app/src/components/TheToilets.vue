@@ -1,16 +1,20 @@
 <template>
   <div>
     <h2>TheToilets.vue is in use.</h2>
-
-    <div class="card bg-base-100 w-96 shadow-xl" v-for="toilet in toiletArray">
-      <!--Start of the card-->
-      <div class="card-body">
-        <h2 class="card-title">{{ toilet.name }}</h2>
-        <h3>{{ toilet.location }}</h3>
-        <h4>{{ toilet.borough }}</h4>
+    <div class="flex flex-wrap">
+      <div
+        class="m-8 card bg-base-100 w-96 shadow-xl"
+        v-for="toilet in toiletArray"
+      >
+        <!--Start of the card-->
+        <div class="card-body">
+          <h2 class="card-title">{{ toilet.name }}</h2>
+          <h3>{{ toilet.location }}</h3>
+          <h4>{{ toilet.borough }}</h4>
+        </div>
       </div>
+      <!--End of the card-->
     </div>
-    <!--End of the card-->
   </div>
 </template>
 

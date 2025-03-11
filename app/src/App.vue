@@ -1,10 +1,10 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheToilets from './components/TheToilets.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import TheToilets from "./components/TheToilets.vue";
 </script>
 
 <template>
-  <div>
+  <!--<div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -12,9 +12,8 @@ import TheToilets from './components/TheToilets.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
-  <Suspense>
-  <TheToilets/></Suspense>
+  <HelloWorld msg="Vite + Vue" />-->
+  <Suspense> <TheToilets /></Suspense>
 </template>
 
 <style scoped>
