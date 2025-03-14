@@ -1,17 +1,10 @@
 <script setup>
 import TheToilets from "./components/TheToilets.vue";
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <!--<div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />-->
+    <RouterLink to="/about">Go to About</RouterLink>
   <div class="navbar bg-base-100 shadow-sm justify-around">
   <h2><a class="btn btn-ghost text-xl">All Toilets</a></h2> 
   <h2><a class="btn btn-ghost text-xl">Accessibility</a></h2> 
