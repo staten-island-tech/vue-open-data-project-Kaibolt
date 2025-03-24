@@ -1,20 +1,23 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-      <nav>
-        <RouterLink to="/"><h2><p class="btn btn-ghost text-xl">All Toilets</p></h2></RouterLink>
-        <RouterLink to="/about">  <h2><p class="btn btn-ghost text-xl">Accessibility</p></h2></RouterLink>
-        <h2><a class="btn btn-ghost text-xl">Year-Round</a></h2>
-      </nav>
+  <nav>
+    <RouterLink to="/"
+      ><h2><p class="btn btn-ghost text-xl">All Toilets</p></h2></RouterLink
+    >
+    <RouterLink to="/about">
+      <h2><p class="btn btn-ghost text-xl">Accessibility</p></h2></RouterLink
+    >
+    <RouterLink to="/year"
+      ><h2><p class="btn btn-ghost text-xl">Year-Round</p></h2></RouterLink
+    >
+  </nav>
 
   <body>
-  <RouterView />    
+    <RouterView />
   </body>
-
-
 </template>
 
 <style scoped>

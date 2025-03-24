@@ -1,13 +1,11 @@
 <template>
   <div>
-    <BarChart/>
+    <BarChart />
   </div>
 </template>
 
 <script setup>
-import BarChart from '../components/TheToilets.vue'
+import BarChart from '../components/BarChart.vue'
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style scoped></style>
