@@ -3,12 +3,7 @@ import { reactive } from 'vue'
 import { Pie } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement } from 'chart.js'
 
-async function getToilets() {
-  let res = await fetch(`https://data.cityofnewyork.us/resource/hjae-yuav.json`)
-  let toiletData = await res.json()
-  return toiletData
-}
-let toiletArray = await getToilets().then()
+import { toiletArray } from '@/assets/general.js'
 function findYearly() {
   let i = toiletArray.length
   let x = 0

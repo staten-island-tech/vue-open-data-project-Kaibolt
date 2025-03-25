@@ -32,12 +32,7 @@ export default {
   },
 }
 
-async function getToilets() {
-  let res = await fetch(`https://data.cityofnewyork.us/resource/hjae-yuav.json`)
-  let toiletData = await res.json()
-  return toiletData
-}
-let toiletArray = await getToilets().then()
+import { toiletArray } from '@/assets/general.js'
 console.log(toiletArray)
 function handicapAccess() {
   let i = toiletArray.length
