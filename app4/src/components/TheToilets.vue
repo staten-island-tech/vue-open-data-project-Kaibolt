@@ -6,9 +6,9 @@
         <li><a @click="testClick($event)">All</a></li>
         <li><a @click="testClick($event)">Brooklyn</a></li>
         <li><a @click="testClick($event)">Bronx</a></li>
-        <li><a>queens</a></li>
-        <li><a>manhatten</a></li>
-        <li><a>staten island</a></li>
+        <li><a @click="testClick($event)">Queens</a></li>
+        <li><a @click="testClick($event)">Manhattan</a></li>
+        <li><a @click="testClick($event)">Staten Island</a></li>
       </ul>
     </div>
     <div class="flex flex-wrap">
@@ -28,22 +28,22 @@
 <script setup>
 import { toiletArray } from '@/assets/general.js'
 import { ref } from 'vue'
+
 let selectedBorough = ref('')
 let finalArray = ref(toiletArray)
+
 function testClick(event) {
   selectedBorough = event.target.innerHTML
   arrayMaker()
   console.log(finalArray.value)
 }
 function arrayMaker() {
-  let finalArray = []
-  if (selectedBorough.value == 'All' || selectedBorough.value == '') {
+  if (selectedBorough === 'All' || selectedBorough === '') {
     finalArray.value = toiletArray
     console.log(finalArray.value)
-  }
-  if (selectedBorough.value !== 'All' || selectedBorough.value !== '') {
-    console.log(selectedBorough.value)
-    finalArray.value = toiletArray.filter((toilet) => toilet.borough === selectedBorough.value)
+  } else {
+    console.log(selectedBorough)
+    finalArray.value = toiletArray.filter((toilet) => toilet.borough === selectedBorough)
     console.log(finalArray.value)
   }
 }
