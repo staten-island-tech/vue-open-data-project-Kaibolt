@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="dropdown place-self-center">
+  <div class="flex justify-center">
+    <div class="dropdown">
       <div tabindex="0" role="button" class="btn m-1">Boroughs</div>
       <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
         <li><a @click="testClick($event)">All</a></li>

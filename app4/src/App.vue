@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <nav>
+  <nav class="flex justify-center">
     <RouterLink to="/"
       ><h2><p class="btn btn-ghost text-xl">All Toilets</p></h2></RouterLink
     >
